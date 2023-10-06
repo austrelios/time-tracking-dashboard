@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font for Rubik -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="main_container">
+    <div class="user_container">
+      <div class="user_details">
+        <img class="jeremy_image" src="./images/image-jeremy.png" alt="Jeremy image">
+        <div class="report_title">
+          <h3>Report for</h3>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="daily_weekly_monthly_container">
+        <button id="daily">Daily</button>
+        <button id="weekly">Weekly</button>
+        <button id="monthly">Monthly</button>
+      </div>
+    </div>
+
+    <div class="dashboard_grid">
+      <div class="work">
+        <img class="image_background" src="./images/icon-work.svg" alt="icon-work">
+        <div class="statistics_container">
+          <div class="cell_title">
+            <h2>Work</h2>
+            <h2>...</h2>
+          </div>
+          <h1>31hrs</h1>
+          <h3>Last week - 36hrs</h3>
+        </div>
+      </div>
+
+      <div class="play">
+        <img class="image_background" src="./images/icon-play.svg" alt="icon-play">
+        <div class="statistics_container">
+          <div class="cell_title">
+            <h2>Play</h2>
+            <h2>...</h2>
+          </div>
+          <h1>10hrs</h1>
+          <h3>Last week - 8hrs</h3>
+        </div>
+      </div>
+
+      <div class="study">
+        <img class="image_background" src="./images/icon-study.svg" alt="icon-study">
+        <div class="statistics_container">
+          <div class="cell_title">
+            <h2>Study</h2>
+            <h2>...</h2>
+          </div>
+          <h1>4hrs</h1>
+          <h3>Last week - 7hrs</h3>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <img class="image_background" src="./images/icon-exercise.svg" alt="icon-exercise">
+        <div class="statistics_container">
+          <div class="cell_title">
+            <h2>Exercise</h2>
+            <h2>...</h2>
+          </div>
+          <h1>4hrs</h1>
+          <h3>Last week - 5hrs</h3>
+        </div>
+      </div>
+
+      <div class="social">
+        <img class="image_background" src="./images/icon-social.svg" alt="icon-social">
+        <div class="statistics_container">
+          <div class="cell_title">
+            <h2>Social</h2>
+            <h2>...</h2>
+          </div>
+          <h1>5hrs</h1>
+          <h3>Last week - 10hrs</h3>
+        </div>
+      </div>
+
+      <div class="self_care">
+        <img class="image_background" src="./images/icon-self-care.svg" alt="icon-self-care">
+        <div class="statistics_container">
+          <div class="cell_title">
+            <h2>Self Care</h2>
+            <h2>...</h2>
+          </div>
+          <h1>2hrs</h1>
+          <h3>Last week - 2hrs</h3>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

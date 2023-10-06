@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-purple: hsl(246, 80%, 60%);
+
+  /* Work */
+  --light-red: hsl(15, 100%, 70%);
+  /* Play */
+  --soft-blue: hsl(195, 74%, 62%);
+  /* Study */
+  --light-red: hsl(348, 100%, 68%);
+  /* Exercise */
+  --lime-green: hsl(145, 58%, 55%);
+  /* Social */
+  --violet: hsl(264, 64%, 52%);
+  /* Self Care */
+  --soft-orange: hsl(43, 84%, 65%);
+
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  /* Card Titles eg Work, Play   */
+  --font-size-18px: 18px;
+
+}
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--very-dark-blue);
+  color: white;
+  display: flex;
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
+/* .statistics_container h3 { */
+h3 {
+  font-size: x-small;
+  font-weight: lighter;
+  color: var(--soft-blue);
+}
+
+.main_container {
+  display: flex;
+  height: fit-content;
+}
+
+.user_container {
+  background-color: var(--dark-blue);
+  height: 2rem;
+  border-radius: 15px;
+  width: 10rem;
+}
+
+.user_details {
+  background-color: var(--blue-purple);
+  border-radius: 15px;
+  height: 15rem;
+  padding-left: 1rem;
+  position: relative;
+  z-index: 5;
+}
+
+.user_container .user_details h2 {
+  font-size: small;
+}
+
+.jeremy_image {
+  width: 40%;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.daily_weekly_monthly_container {
+  display: block;
+  background-color: var(--dark-blue);
+  height: 7rem;
+  border-radius: 15px;
+  padding-left: 2rem;
+  padding-top: 1.8rem;
+  position: relative;
+  top: -1.3rem;
+  z-index: 0;
+}
+
+button {
+  text-align: center;
+  background-color: var(--dark-blue);
+  color: var(--blue-purple);
+  border: 0;
+  display: block;
+}
+
+button:hover {
+  color: white;
+}
+
+.dashboard_grid {
+  margin-top: 0;
+  display: grid;
+  height: fit-content;
+  gap: .6rem;
+  padding: 0 10px 10px 10px;
+  grid-template-areas:
+    'work play study' 'exercise social self_care';
+}
+
+.image_background {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  text-align: start;
+  top: -2rem;
+}
+
+.cell_title {
+  margin-bottom: .5rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work {
+  background-color: var(--light-red);
+}
+
+.play {
+  background-color: var(--soft-blue);
+}
+
+.study {
+  background-color: var(--light-red);
+}
+
+.exercise {
+  background-color: var(--lime-green);
+}
+
+.social {
+  background-color: var(--violet);
+}
+
+.self_care {
+  background-color: var(--soft-orange);
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self_care {
+  text-align: center;
+  width: 8rem;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 15px;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.statistics_container {
+  position: relative;
+  top: -3rem;
+  background-color: var(--dark-blue);
+  height: 8rem;
+  padding-top: 1.2rem;
+  padding-left: .7rem;
+  text-align: left;
+  border-radius: 15px;
+  font-weight: lighter;
+}
+
+.statistics_container h2 {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.statistics_container h3 {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width:800px) {
+  .main_container {
+    display: block;
+  }
+
+  .user_container {
+    margin-bottom: 2rem;
+    height: 13rem;
+    width: 20rem;
+  }
+
+  .user_details {
+    width: 20rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    height: 9.5rem;
+  }
+
+  .jeremy_image {
+    height: 4rem;
+    width: 4rem;
+    margin-right: .6rem;
+  }
+
+
+  .daily_weekly_monthly_container {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    height: 5.5rem;
+  }
+
+
+  .dashboard_grid {
+    display: block;
+    padding: 0;
+  }
+
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .self_care {
+    width: 20rem;
+    padding: 20px 0;
+    margin-bottom: .6rem
+  }
+
+}
